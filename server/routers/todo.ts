@@ -24,4 +24,19 @@ export const todoRouter = t.router({
       if (todo) todo.done = !todo.done;
       return todo;
     }),
+
+  update: t.procedure
+    .input(z.object({ id: z.number(), text: z.string() }))
+    .mutation(({ input }) => {
+      const todo = todos.find((t) => t.id === input.id);
+      if (todo) todo.text = input.text;
+      return todo;
+    }),
+
+  delete: t.procedure
+    .input(z.number())
+    .mutation(({ input }) => {
+      todos = todos.filter((t) => t.id !== input);
+      return { id: input };
+    }),
 });
