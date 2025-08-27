@@ -85,7 +85,7 @@ export default function App() {
             transition: "background-color 0.2s",
           }}
         >
-          Ajouter
+          ➕ Ajouter
         </button>
       </div>
 
@@ -140,7 +140,7 @@ export default function App() {
             cursor: "pointer",
             fontWeight: "bold",
             transition: "background-color 0.2s",
-          }}>Enregistrer</button>
+          }}>💾Enregistrer</button>
               ) : (
                 <button
                   onClick={() => {
@@ -158,7 +158,7 @@ export default function App() {
             transition: "background-color 0.2s",
           }}
                 >
-                  Modifier
+                  🖊️Modifier
                 </button>
               )}
               <button
@@ -173,7 +173,7 @@ export default function App() {
             fontWeight: "bold",
             transition: "background-color 0.2s",
           }}>
-                Supprimer
+               🗑️Supprimer
               </button>
             </div>
           </li>

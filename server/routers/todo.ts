@@ -4,7 +4,7 @@ import { z } from "zod";
 const t = initTRPC.create();
 
 type Todo = { id: number; text: string; done: boolean };
-let todos: Todo[] = [{ id: 1, text: "Apprendre tRPC", done: false }];
+let todos: Todo[] = [{ id: 1, text: "Commencer la journée", done: false }];
 
 export const todoRouter = t.router({
   list: t.procedure.query(() => todos),
