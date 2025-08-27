@@ -1,0 +1,2 @@
+Il s'agit d'une application pour gérer la liste des choses à faire dans une journéee. On peut créer une tâche à faire, modifier la tâche ou la supprimer. En dessus de la liste il y a un compteur automatique des tâches à faire. Lorsqu'une tâche sera checké ou supprimé, le compteur diminuera. De même lorsqu'il y a l'ajout d'un nouveau tâchen le compteur sera incrémenté.
+Ce mini-projet a été développé pour tester TypeScript Remote Procedure Call. Il a été développé entièrement en fullstack TS (Node + REACT + Vite).   
